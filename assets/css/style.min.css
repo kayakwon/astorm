@@ -7547,13 +7547,13 @@ body {
 }
 
 .hero,
-.welfare > ul > li {
+.job > ul > li {
   -webkit-box-sizing: border-box;
 }
 
 .hero,
 .process li,
-.welfare > ul > li {
+.job > ul > li {
   -moz-box-sizing: border-box;
 }
 
@@ -8074,8 +8074,8 @@ body {
   }
 }
 
-.page#about .btn-ceo-message,
-.page#value .btn-view-value {
+.page#about .btn-view-office,
+.page#project .btn-view-project {
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -8089,7 +8089,7 @@ body {
   background-image: url(../img/bg-about.jpg);
 }
 
-.page#about .btn-ceo-message {
+.page#about .btn-view-office {
   transform: translateX(-50%);
 }
 
@@ -8098,17 +8098,17 @@ span.nbsp {
   width: 2px;
 }
 
-.page#value {
-  background-image: url(../img/bg-value.jpg);
+.page#project {
+  background-image: url(../img/bg-project.jpg);
 }
 
-.page#value .btn-view-value {
+.page#project .btn-view-project {
   transform: translateX(-50%);
 }
 
 @media screen and (max-width: 480px) {
-  .page#value {
-    background-image: url(../img/bg-value-m.jpg);
+  .page#project {
+    background-image: url(../img/bg-project.jpg);
   }
 }
 
@@ -8117,7 +8117,7 @@ span.nbsp {
 }
 
 .process li:after,
-.welfare .welfare-item .desc li:before {
+.job .job-item .desc li:before {
   content: "";
   background: #1d1d1b;
 }
@@ -8133,52 +8133,37 @@ span.nbsp {
   bottom: -20px;
 }
 
-.welfare {
+.job {
   margin: 0 auto;
   border-top: 1px solid #1d1d1b;
 }
 
-.welfare > ul > li {
+.job > ul > li {
   box-sizing: border-box;
-  border-bottom: 1px solid #1d1d1b;
+  border-bottom: 1px solid #a3a4a5;
 }
 
-.welfare > ul > li:last-child {
+.job > ul > li:last-child {
   margin-right: 0;
 }
 
-.welfare .welfare-item {
+.job .job-item {
   position: relative;
 }
 
-.welfare .welfare-item .icon {
-  position: absolute;
-  left: 9%;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-  display: block;
-  max-width: 90px;
-}
-
-.welfare .welfare-item .icon.icon-1 {
-  max-width: 100px;
-}
-
-.welfare .welfare-item .title {
+.job .job-item .title {
   font-size: 16px;
   font-weight: 600;
   position: absolute;
+  word-break: normal;
   top: 50%;
+  width: 200px;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
-  left: 34%;
+  left: 5%;
 }
 
 .page#career3 .btn-apply,
@@ -8189,19 +8174,19 @@ span.nbsp {
   -o-transform: translateX(-50%);
 }
 
-.welfare .welfare-item .desc {
-  padding: 1.5em 0;
-  margin-left: 60%;
+.job .job-item .desc {
+  padding: 1.5em 0 1em 0;
+  margin-left: 40%;
 }
 
-.welfare .welfare-item .desc li {
+.job .job-item .desc li {
   font-weight: 400;
   margin: 5px 0;
   line-height: 1.4;
   position: relative;
 }
 
-.welfare .welfare-item .desc li:before {
+.job .job-item .desc li:before {
   width: 3px;
   height: 3px;
   position: absolute;
@@ -8282,7 +8267,7 @@ span.nbsp {
 }
 
 @media screen and (max-width: 740px) {
-  .welfare .welfare-item .icon {
+  .job .job-item .icon {
     left: 16%;
     max-width: 62px !important;
     -webkit-transform: translateY(-20px);
@@ -8291,7 +8276,7 @@ span.nbsp {
     -o-transform: translateY(-20px);
     transform: translateY(-20px);
   }
-  .welfare .welfare-item .title {
+  .job .job-item .title {
     text-align: center;
     width: 62px;
     left: 16%;
@@ -8302,20 +8287,20 @@ span.nbsp {
     -o-transform: translateY(-40px);
     transform: translateY(-40px);
   }
-  .welfare .welfare-item .desc {
+  .job .job-item .desc {
     margin-left: 50%;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .welfare .welfare-item .icon {
+  .job .job-item .icon {
     left: 10%;
   }
-  .welfare .welfare-item .title {
+  .job .job-item .title {
     font-size: 14px;
     left: 10%;
   }
-  .welfare .welfare-item .desc {
+  .job .job-item .desc {
     margin-left: 48%;
   }
 }
@@ -8515,6 +8500,10 @@ span.nbsp {
   font-weight: 400;
   font-size: 14px;
   letter-spacing: -0.05em;
+}
+
+.modal .view-career {
+  padding: 20px 50px 50px;
 }
 
 .modal .modal-body h2 {
